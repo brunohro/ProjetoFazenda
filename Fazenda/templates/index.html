@@ -1,34 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazenda Verde</title>
-    <link rel="stylesheet" href="static/css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Bem-vindo à Fazenda Verde</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Nossa fazenda é especializada na produção sustentável de alimentos frescos e orgânicos.</p>
-        </section>
-        <section id="produtos">
-            <h2>Nossos Produtos</h2>
-            <p>Oferecemos uma variedade de frutas, verduras e laticínios direto da fazenda.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Fazenda Verde. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+{% extends "layout/base.html" %}
+{% block content %}
+<main>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Nossa fazenda é especializada na produção sustentável de alimentos frescos e orgânicos.</p>
+    </section>
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>Oferecemos uma variedade de frutas, verduras e laticínios direto da fazenda.</p>
+    </section>
+</main>
+{% endblock content %}
+
