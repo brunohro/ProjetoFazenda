@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Fazenda.views import index
+from Fazenda.views import index, listar_animais, cadastrar_animais, editar_animais, remover_animal
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index')
+    path('', index, name='index'),
+    path('listar_animais/', listar_animais, name="listar_animais"),
+    path('cadastrar_animais/', cadastrar_animais, name="cadastrar_animais"),
+    path('editar_animais/<int:id>', editar_animais, name="editar_animais"),
+    path('remover_animal/<int:id>', remover_animal, name="remover_animal"),
 ]

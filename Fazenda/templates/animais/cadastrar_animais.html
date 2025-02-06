@@ -1,0 +1,14 @@
+{% extends "layout/base.html" %}
+{% block content %}
+<h1 class="title">PÁGINA DE CADASTRO - ANIMAL</h1>
+    <div class="form-container">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-actions">
+                <a type="button" class="cancel-btn" href="{% url "index" %}">Cancelar</a>
+                <button type="submit" class="submit-btn">CADASTRAR</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
